@@ -28,3 +28,8 @@ specific solution in python, write with option 'wb' where 'b' is for binary form
 tmux might be missing some env variable
 execute **su - <username>**
 may help resolve this
+
+## tmux
+
+### Kill current panel
+Ctrl-A x
