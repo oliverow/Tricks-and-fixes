@@ -28,6 +28,9 @@ specific solution in python, write with option 'wb' where 'b' is for binary form
 tmux might be missing some env variable
 execute **su - <username>**
 may help resolve this
+  
+### saved files in container will be lost once container is re-built from docker image
+always save any changes in shared directory
 
 ## tmux
 
