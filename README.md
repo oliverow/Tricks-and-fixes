@@ -36,3 +36,8 @@ always save any changes in shared directory
 
 ### Kill current panel
 Ctrl-A x
+
+## conda
+
+### activate environment
+source activate newenv
