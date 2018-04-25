@@ -1,10 +1,17 @@
 # This repo is a collection of tricks and fixes to all kinds of weird issues in my CS life.
 [ReadMe editor](https://help.github.com/articles/basic-writing-and-formatting-syntax/)
 
+## Caffe
+
+### aborted at (unix time) try "date -d" if you are using GNU date
+`make clean
+make -j8
+make py -j8`
+
 ## Opencv
 
 ### make project dependent on opencv, run this before make
-**export LD_LIBRARY_PATH=${LD_LIBRARY_PATH}:~/FaceRec/ThirdParty/opencv/release/lib/**
+`export LD_LIBRARY_PATH=${LD_LIBRARY_PATH}:~/FaceRec/ThirdParty/opencv/release/lib/`
 
 ## CUDA
 
