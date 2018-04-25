@@ -20,7 +20,7 @@ In general, newline is "\r\n" (CR LF) in Windows, "\n" (LF) in Unix, "\r" (CR) i
 specific solution in python, write with option 'wb' where 'b' is for binary format (LF)
 
 ### a ^M is added at the end of every line in CR LF
-**sed -e "s/^M//" filename > newfilename**
+`sed -e "s/^M//" filename > newfilename`
 
 ## Docker
 
@@ -41,3 +41,8 @@ Ctrl-A x
 
 ### activate environment
 source activate newenv
+
+## cmd tools
+
+### ldd
+try `ldd EXEC` will list all dependencies of the EXECTUABLE
