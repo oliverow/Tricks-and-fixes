@@ -4,9 +4,7 @@
 ## Caffe
 
 ### aborted at (unix time) try "date -d" if you are using GNU date
-`make clean
-make -j8
-make py -j8`
+`make clean` and redo make
 
 ## Opencv
 
