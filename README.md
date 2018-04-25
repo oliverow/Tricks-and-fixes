@@ -40,7 +40,7 @@ Ctrl-A x
 ## conda
 
 ### activate environment
-source activate newenv
+`source activate newenv`
 
 ## cmd tools
 
