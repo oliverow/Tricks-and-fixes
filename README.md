@@ -19,10 +19,10 @@ preprocessor definition could be the reason
 ## File System
 
 ### new line encoding differences between OS
-In windows (non-binary), "\n" in string is automatically encoded in "\r\n" (CR LF) which is 0X0d0a. 
-However in c++ on server, std::endl is "\n" (LR) which is equal to << "\n" << std::flush, 0X0a in hexidecimal
-In general, newline is "\r\n" (CR LF) in Windows, "\n" (LF) in Unix, "\r" (CR) in Macintosh 
-specific solution in python, write with option 'wb' where 'b' is for binary format (LF)
+In windows (non-binary), "\n" in string is automatically encoded in "\r\n" (CR LF) which is 0X0d0a.  
+However in c++ on server, std::endl is "\n" (LR) which is equal to << "\n" << std::flush, 0X0a in hexidecimal  
+In general, newline is "\r\n" (CR LF) in Windows, "\n" (LF) in Unix, "\r" (CR) in Macintosh  
+specific solution in python, write with option 'wb' where 'b' is for binary format (LF)  
 
 ### a ^M is added at the end of every line in CR LF
 `sed -e "s/^M//" filename > newfilename`
@@ -51,3 +51,9 @@ Ctrl-A x
 
 ### ldd
 try `ldd EXEC` will list all dependencies of the EXECTUABLE
+
+## Network
+
+### Port is being used
+run `netstat -l -p` to find the pid of the process (-l for ports that are being listened; -p for process info)  
+then `kill pid`
